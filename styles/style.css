@@ -51,11 +51,10 @@ a {
 
 #logotipo {
     position: relative;
-    top: 2px;
+    top: 0.125em;
     bottom: 5px;
     padding: 5px;
 }
-
 
 .logotipo h4{
     font-family: 'Ms Madi', cursive;
@@ -425,7 +424,7 @@ i {
 
 
 
-
+/* ----------------------------------------------------------------------------------------------------------------------- */
 @media (max-width: 426px){
     .container {
         transform-origin: top left;
@@ -438,6 +437,7 @@ i {
         border: 1px solid var(--brown-color);
     }
     
+    /* header */
     .header{
         transform-origin: top left;
     }
@@ -445,7 +445,7 @@ i {
         position: absolute; 
         top: 65px; 
         gap: 10px;
-        margin-right: 15px;
+        margin-right: -10px;
     }
     .signup p{
         color: var(--brown-color);
@@ -462,8 +462,14 @@ i {
         font-size: 1.5em;
         color: var(--brown-color);
     }
+
+    /* navbar */
     .navbar {
         border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
     }
     .navbar ul {
         display: none;
@@ -493,5 +499,127 @@ i {
     .carousel img:hover {
         opacity: 50%;
     }
+    .title-highlights h1{
+        margin-top: 55px;
+        text-align: center;
+        font-family: 'Ms Madi', cursive;
+        font-size: 3em;
+        color: var(--brown-color);
+        font-weight: normal;
+    }
 
+    /* Banner home text */
+    .home-text {
+        width: 100%;
+    }
+    .home-text h1{
+        width: 50%;
+        margin: 25px 0 0 50px;
+        font-size: 2em;
+    }
+    
+    /* produto destaque */
+    
+    .image-highlights-home {
+        width: 15em;
+    }
+
+    .product-highlights-home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .thumbs-images {
+        display: none;
+    }
+
+    .row-images-home {
+        display: flex;
+    }
+
+
+    .product-description h3{
+        margin-top: 7px;
+        margin-bottom: 6px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #subtitle-perfume{
+        margin-top: 6px;
+        margin-bottom: 6px;
+        font-size: 0.8em;
+        text-align: center;
+
+    }
+
+    .small{
+        text-align: center;
+        margin: 0 42%;
+    }
+
+    .p-description {
+        font-size: 0.9em;
+        margin-top: 10px;
+        line-height: 1.7;
+    }
+
+    .btn-buy {
+        background-color: var(--pink-color);
+        padding: 7px 10px;
+        color: var(--brown-color);
+        border: none;
+        border-radius: 15px;
+        font-size: 0.8em;
+        font-style: italic;
+        margin: 5px auto;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .btn-buy:hover {
+        opacity: .7;
+        
+    }
+
+    /* Footer */
+    .footer {
+        width: 100%;
+    }
+    .header-footer{
+        font-size: 0.8em;
+        margin-bottom: 8px;
+        color: var(--white-color);
+        font-size: 0.6em;
+    }
+
+    .header-footer p a {
+        color: var(--white-color);
+    }
+
+    .footer-footer {
+        font-size: 0.6em;
+        color: var(--white-color);
+    }
+
+    .footer-footer p a {
+        color: var(--white-color);
+        font-style: italic;
+    }
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+@media (min-width: 426px) and (max-width: 769px) {
+    .home-text h1{
+        margin: 7px auto;
+    }
+    .product-highlights-home {
+        display: flex;
+        flex-direction: column;
+    }
 }
